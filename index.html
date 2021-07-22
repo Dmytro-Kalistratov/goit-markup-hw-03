@@ -20,7 +20,7 @@
 <body>
     <!--Шапка-->
     <header class="header">
-        <nav>
+        <nav class="container">
             <a href="./index.html" class="logo-hd link">Web<span class="logo-hd-half">Studio</span></a>
             <ul class="nav list">
                 <li><a class="nav-li current link" href="./index.html">Студия</a></li>
@@ -28,7 +28,7 @@
                 <li><a class="nav-li link" href="">Контакты</a></li>
             </ul>
         </nav>
-        <ul class="address list">
+        <ul class="address container list">
             <li><a class="address-li link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li><a class="address-li link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
@@ -41,68 +41,70 @@
             <button class="button" type="button">Заказать услугу</button>
         </section>
         <!--Особенности-->
-        <section class="section">
+        <section class="container">
             <h2 class="section-title-hide">Особенности</h2>
             <ul class="features list">
-                <li>
+                <li class="test">
                     <h3 class="title">Внимание к деталям</h3>
-                    <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    <p class="content">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
-                <li>
+                <li class="test">
                     <h3 class="title">Пунктуальность</h3>
-                    <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    <p class="content">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
-                <li>
+                <li class="test">
                     <h3 class="title">Планирование</h3>
-                    <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    <p class="content">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
-                <li>
+                <li class="test">
                     <h3 class="title">Современные технологии</h3>
-                    <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    <p class="content">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
         </section>
         <!--Чем мы занимаемся-->
-        <section class="section">
+        <section class="container">
             <h2 class="section-title">Чем мы занимаемся</h2>
-            <ul class="list">
+            <ul class="to-do list">
                 <li><img src="./images/box-1.jpg" alt="Вёрстка" width="370"></li>
                 <li><img src="./images/box-2.jpg" alt="Программирование" width="370"></li>
                 <li><img src="./images/box-3.jpg" alt="Дизайн" width="370"></li>
             </ul>
         </section>
         <!--Наша команда-->
-        <section class="section team">
-            <h2 class="section-title">Наша команда</h2>
+        <section class="container team">
+            <h2 class="team-title">Наша команда</h2>
             <ul class="team-list">
-                <li><img src="./images/i-demyanenko.jpg" alt="Игорь Демьяненко" width="270">
+                <li class="team-shadow"><img src="./images/i-demyanenko.jpg" alt="Игорь Демьяненко" width="270">
                     <h3 class="name"> Игорь Демьяненко</h3>
-                    <p> Product Designer</p>
+                    <p class="team-content"> Product Designer</p>
                 </li>
-                <li><img src="./images/o-repina.jpg" alt="Ольга Репина" width="270">
+                <li class="team-shadow"><img src="./images/o-repina.jpg" alt="Ольга Репина" width="270">
                     <h3 class="name"> Ольга Репина</h3>
-                    <p> Frontend Developer</p>
+                    <p class="team-content"> Frontend Developer</p>
                 </li>
-                <li><img src="./images/n-tarasov.jpg" alt="Николай Тарасов" width="270">
+                <li class="team-shadow"><img src="./images/n-tarasov.jpg" alt="Николай Тарасов" width="270">
                     <h3 class="name"> Николай Тарасов</h3>
-                    <p> Marketing</p>
+                    <p class="team-content"> Marketing</p>
                 </li>
-                <li><img src="./images/m-ermakov.jpg" alt="Михаил Ермаков" width="270">
+                <li class="team-shadow"><img src="./images/m-ermakov.jpg" alt="Михаил Ермаков" width="270">
                     <h3 class="name"> Михаил Ермаков</h3>
-                    <p> Product Designer</p>
+                    <p class="team-content"> Product Designer</p>
                 </li>
             </ul>
         </section>
     </main>
     <!--Подвал-->
     <footer class="footer">
-        <a class="logo-ft link" href="/">Web<span class="logo-ft-half">Studio</span></a>
-        <address>
-            <p class="address-fiz">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="address-foot list">
-                <li><a class="foot-li link" href="mailto:info@example.com">info@example.com</a></li>
-                <li><a class="foot-li link" href="tel:+380991111111">+38 099 111 11 11</a></li>
-            </ul>
+        <div class="container">
+            <a class="logo-ft link" href="/">Web<span class="logo-ft-half">Studio</span></a>
+            <address>
+                <p class="address-fiz">г. Киев, пр-т Леси Украинки, 26</p>
+                <ul class="address-foot list">
+                    <li><a class="foot-li link" href="mailto:info@example.com">info@example.com</a></li>
+                    <li><a class="foot-li link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                </ul>
+        </div>
         </address>
     </footer>
 </body>
