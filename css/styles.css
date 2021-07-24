@@ -317,10 +317,12 @@ ul {
 }
 
 .buttons {
-  font-family: inherit;
+  padding: 6px 22px;
   color: var(--tittle-text-color);
   background-color: var(--unique-background-color);
   border: none;
+  border-radius: 4px;
+  font-family: inherit;
   font-size: 16px;
   line-height: 1.6;
   font-weight: 500;
@@ -330,6 +332,8 @@ ul {
 .buttons:hover,
 .buttons:focus,
 .filtres .current {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
 }
@@ -380,16 +384,24 @@ ul {
   margin-bottom: 30px;
 } */
 
+.projects-link {
+  margin-bottom: 20px;
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.9;
+  text-decoration: none;
+}
+
 .projects-title-color {
+  padding: 0 24px;
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   font-weight: 700;
   color: var(--tittle-text-color);
 }
 
-.projects-link {
-  color: var(--primary-text-color);
-  font-size: 16px;
-  line-height: 1.9;
-  text-decoration: none;
+.projects-disc {
+  padding: 0 24px;
+  margin-bottom: 20px;
 }
