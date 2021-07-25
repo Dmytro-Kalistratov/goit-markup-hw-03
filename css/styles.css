@@ -133,23 +133,31 @@ ul {
 }
 
 /* hero styles */
-.section-title-hide {
-  display: none;
-  margin: 0;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .hero {
   padding: 200px 252px;
-  height: 600px;
   text-align: center;
   background-color: var(--background-color);
 }
 
 .hero-title {
   margin-bottom: 30px;
+  max-width: 696px;
   color: var(--secondary-text-color);
   font-size: 44px;
-  min-width: 696px;
   line-height: 1.36;
   font-weight: 900;
   text-transform: uppercase;
@@ -161,13 +169,11 @@ ul {
 }
 
 .button {
-  min-width: 200px;
   padding: 10px 32px;
-  text-align: center;
   font-size: 16px;
   line-height: 1.9;
   font-weight: 700;
-  font-family: inherit;
+  /* font-family: inherit; */
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -183,6 +189,11 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   font-weight: 400;
+}
+
+.title,
+.features .item {
+  width: 270px;
 }
 
 .features .item + .item {
